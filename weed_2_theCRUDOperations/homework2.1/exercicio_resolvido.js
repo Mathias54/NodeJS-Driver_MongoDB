@@ -1,0 +1,12 @@
+// year = 2013
+// rated = PG-13
+// no awards
+
+db.movieDetails.find({
+    'year': 2013,
+    'rated': 'PG-13',
+    'awards.wins': 0
+},{
+    'title':1,
+    '_id':0
+});
